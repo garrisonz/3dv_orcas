@@ -65,22 +65,6 @@ pkill -f capture_dh_usb_service.py
 - **保存位置**：图像保存在 `recordings/` 目录下
 - **文件命名**：`dh_usb_YYYYMMDD_HHMMSS_mmm.jpg`（包含毫秒时间戳）
 
-### 录制频率示例
-
-```bash
-# 每1秒捕获一次（默认）
-python3 capture_dh_usb_service.py
-
-# 每2秒捕获一次
-python3 capture_dh_usb_service.py --interval 2
-
-# 每0.5秒捕获一次（更频繁）
-python3 capture_dh_usb_service.py -i 0.5
-
-# 每10秒捕获一次（更稀疏）
-python3 capture_dh_usb_service.py -i 10
-```
-
 ## 注意事项
 
 1. 确保摄像头未被其他程序占用
