@@ -65,10 +65,15 @@ pkill -f capture_dh_usb_service.py
 - **保存位置**：图像保存在 `recordings/` 目录下
 - **文件命名**：`dh_usb_YYYYMMDD_HHMMSS_mmm.jpg`（包含毫秒时间戳）
 
+## 示例效果
+
+以下是一张捕获的示例图像：
+
+![捕获示例](images/dh_usb_image_20251229_082857.jpg)
+
 ## 注意事项
 
 1. 确保摄像头未被其他程序占用
 2. 服务使用命名管道 `/tmp/dh_usb_camera_service_pipe` 进行通信
 3. PID文件保存在 `/tmp/dh_usb_camera_service.pid`
 4. 录制前会自动预热摄像头，确保曝光正常
-
